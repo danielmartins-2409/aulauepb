@@ -1,18 +1,9 @@
-resp1 = int(input(""))
-resp2 = int(input(""))
-resp3 = int(input(""))
-resp4 = int(input(""))
-resp5 = int(input(""))
+valor = int(input(""))
+print(f"Tabuada do {valor}")
 
-somaResp = resp1 + resp2 + resp3 +resp4 + resp5
 
-if somaResp == 2:
-    print("suspeito")
+if valor < 0: 
+    print("invalido")
 else:
-    if somaResp == 3 or somaResp ==4:
-        print("cumplice")
-    else:
-        if somaResp == 5:
-            print("assassino")
-        else:
-            print("inocente")
+    for i in range(1, 11):
+        print(valor,'X' ,i, "=", valor * i)
