@@ -19,7 +19,7 @@ else:
                    percentual = 5
                    salarioReajustado = salario*(percentual/100 + 1)
 
-print(f"""Salario antes do reajuste = {salario}
+print(f"""Salário antes do reajuste = {salario}
 -------------------------------------------------
           Percentual aplicado = {percentual}
 -------------------------------------------------
