@@ -6,4 +6,6 @@ prod = (num1 * 2)*(num2/2)
 soma = (3 * num1) + num3
 pont = num3 ** 3
 
-print(prod, soma, pont)
+print(prod)
+print(soma)
+print(pont)
