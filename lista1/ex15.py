@@ -6,3 +6,5 @@ valorR = (valorA + valorB)**2
 valorS = (valorB + valorC)**2
 
 valorD = (valorR + valorS)/2
+
+print(f"R = {valorR}, S = {valorS}, D = {valorD}")
