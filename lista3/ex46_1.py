@@ -1,7 +1,7 @@
 
 count = 0
 
-while count < 3:
+while count < 30:
 
     nota = float(input("Insira a primeira nota: "))
     if 0 <= nota <= 10:
