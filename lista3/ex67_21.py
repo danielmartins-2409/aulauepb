@@ -1,27 +1,29 @@
-numero = int(input("numero de empregado "))
-meses = int(input("numero de meses "))
+numero = int(input("Número do empregado: "))
+meses = int(input("Número de meses: "))
 
-if meses > 0:
+if numero != 0 or meses != 0:
+
     maisRecente = maisAntigo = numero
-    mesAntigo = mesRecente = meses
+    mesRecente = mesAntigo = meses
+
+    numero = int(input("Número do empregado: "))
+    meses = int(input("Número de meses: "))
+
     while numero != 0 or meses != 0:
 
-        numero = int(input("numero de empregado "))
-        meses = int(input("numero de meses "))
+        if meses > mesAntigo:
+            mesAntigo = meses
+            maisAntigo = numero
 
-        if numero != 0 or meses != 0:
-            if meses > 0:
-                if meses > mesAntigo:
-                    mesAntigo = meses
-                    maisAntigo = numero
-                elif meses < mesRecente:
-                    mesRecente = meses
-                    maisRecente = numero
+        if meses < mesRecente:
+            mesRecente = meses
+            maisRecente = numero
 
-            else:
-                print("valor inválido")
+        numero = int(input("Número do empregado: "))
+        meses = int(input("Número de meses: "))
+
+    print("Mais recente:", maisRecente)
+    print("Mais antigo:", maisAntigo)
+
 else:
-    print("Valor inválido")
-
-print("o mais recente é o funcionario", maisRecente, "e o mais antigo é o funcionário", maisAntigo)
-    
+    print("Nenhum funcionário informado")
