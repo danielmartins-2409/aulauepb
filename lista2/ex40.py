@@ -16,7 +16,7 @@ if operacao == "+":
 elif operacao == "-":
     valorFinal = num1 - num2
 elif operacao == "*":
-    valorFinal = num1 * numel
+    valorFinal = num1 * num2
 elif operacao == "/":
     if num2 == 0:
         print("Impossível dividir por 0")
@@ -25,6 +25,7 @@ elif operacao == "/":
         valorFinal = num1 / num2
 else:
     print("operação inválida")
+    validador = False
 
 if validador:
     print(valorFinal)
