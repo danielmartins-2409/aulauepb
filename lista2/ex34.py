@@ -16,7 +16,7 @@ else:
             raiz1 = ((-valorB)+math.sqrt(delta))/ 2 * valorA
             raiz2 = ((-valorB)-math.sqrt(delta))/ 2 * valorA
 
-            print(f", Possui duas raízes reaisRaízes: {raiz1, raiz2}")
+            print(f"Possui duas raízes reais Raízes: {raiz1, raiz2}")
         else:
             raiz = -valorB/(2* valorA)
             print(f"Possui uma raíz real: {raiz}")
