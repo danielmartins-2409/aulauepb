@@ -3,19 +3,19 @@ horasTrabalhadas = float(input("Horas trabalhadas: "))
 
 valorBruto = valorHora * horasTrabalhadas
 
-impostoDeRenda = 0.11
-inss = 0.08
-sindicato = 0.05
+impostoDeRenda = 0.11 * valorBruto
+inss = 0.08 * valorBruto
+sindicato = 0.05 * valorBruto
 
-valorLiquido = valorBruto - (valorBruto*(inss + impostoDeRenda + sindicato))
+valorLiquido = valorBruto - (inss + impostoDeRenda + sindicato)
+
+
+
+
 print(f"""
-      salário bruto = R${valorBruto} 
-------------------------------------------
-      IR = R${valorBruto*(impostoDeRenda)}
-------------------------------------------
-      INSS = R${valorBruto*(inss)}
-------------------------------------------
-      Sindicato = R${valorBruto*sindicato}
-------------------------------------------
-      Salário Líquido = R${valorLiquido}
+Salário Bruto:         R${valorBruto:.2f}
+IR:                    R${impostoDeRenda:.2f}
+INSS:                  R${inss:.2f}
+Sindicato:             R${sindicato:.2f}
+Salário Liquído:       R${valorLiquido:.2f}
 """)
