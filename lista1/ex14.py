@@ -1,4 +1,4 @@
-distancia = float(input("insira a distancia total percorrida em KM: "))
+distancia = float(input("insira a distancia total percorrida em Km: "))
 combustivelGasto = float(input("Insira o total de combustível gasto em litros: "))
 
 consumoMedio = distancia /combustivelGasto
