@@ -10,5 +10,7 @@ if num > 0:
         print("é primo")
     else: 
         print("Não é primo")
+elif num == 0:
+    print("Não é primo")
 else:
     print("nao existe primo negativo")
